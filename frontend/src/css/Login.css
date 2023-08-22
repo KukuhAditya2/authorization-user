@@ -1,0 +1,51 @@
+html {
+  background-color: red !important;
+  /* position: relative; */
+}
+
+.body {
+  /* display: flex; */
+  background-color: aqua;
+}
+
+.card {
+  box-sizing: border-box;
+  /* height: 500px; */
+  width: 30%;
+  padding: 20px;
+  margin: auto;
+  /* background-color: aqua !important; */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: 0;
+  box-shadow: none;
+  border-color: black;
+}
+
+.btn {
+  background: rgb(25, 186, 25) !important;
+  border: 10px !important;
+  width: 100%;
+}
+.btn:hover {
+  background: rgb(9, 142, 9) !important;
+}
+
+.register {
+  margin-top: 25px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link {
+  color: rgb(52, 52, 210);
+  text-decoration: none;
+}
+
+.login {
+  font-size: 30px;
+}

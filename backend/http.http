@@ -1,0 +1,47 @@
+
+
+GET http://localhost:3006/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZWUiOiJrdWt1aDIiLCJpYXQiOjE2OTA5MDI1NDMsImV4cCI6MTY5MDkwMjU1OH0.mLm9RWDaIiu2eTLFQBRrFl3ZuxX5PxWDA3BlQX6LeuA
+
+###
+GET http://localhost:3006/token
+
+###
+
+DELETE http://localhost:3006/users/logout
+
+###
+POST http://localhost:3006/users/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "kukuh3",
+    "password": "12345678",
+    "confirmPassword": "12345678"
+}
+
+###
+POST http://localhost:3006/users/login
+Content-Type: application/json
+
+{
+    "username": "kukuh2",
+    "password": "12345678"
+}
+
+###
+PATCH http://localhost:3006/users
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imt1a3VoMiIsImlhdCI6MTY5MDQxMzA0NywiZXhwIjoxNjkwNDEzMDY3fQ.npzmHoUDGRLFHRC3pIL9NdvbHLxQzKMTAfucQxSIbeI
+
+{
+    "passwordLama": "12345678",
+    "password": "123456789",
+    "confirmPassword": "123456789"
+}
+
+###
+DELETE http://localhost:3006/users/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imt1a3VoMSIsImlhdCI6MTY5MDMxODY5MywiZXhwIjoxNjkwMzE4NzEzfQ.cEd3hkpzIHrI4Qp2_A0vSW0c5CLTYRvZagEi1gLtP-s
